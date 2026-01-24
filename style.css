@@ -55,7 +55,7 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-.highlight-red {
+.card.highlight-red {
   background-color: rgba(255, 0, 0, 0.2); /* red with 20% opacity */
 }
 
