@@ -1,10 +1,86 @@
+/* Base styles */
 body {
-  font-family: system-ui, sans-serif;
-  max-width: 800px;
-  margin: 2rem auto;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
   padding: 1rem;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-h1 {
-  color: #333;
+h1, h2, h3 {
+  color: #222;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Card style for events and recommendations */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Form */
+form {
+  margin-top: 1rem;
+}
+input[type="email"] {
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 0.5rem;
 }
