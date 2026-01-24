@@ -13,28 +13,32 @@
 
   <p>Melde dich an:</p>
   
-  <form
-    action="https://docs.google.com/forms/d/e/1FAIpQLSdnaZalc37nRXCf-CsmqclrBUsbgAi7gM4wsuwUKr1f9TuMnQ/formResponse"
-    method="POST"
-    onsubmit="window.location='succesful_registration.html';"
-  >
-
-  <label>
-    Email Adresse:
-    <input
-      type="email"
-      name="entry.119062132"
-      required
-    >
-  </label>
-
-  <br><br>
-
-  <button type="submit">
-    Ich komme!
-  </button>
-
+<form id="registrationForm">
+  <label>Email:</label>
+  <input type="email" name="entry.119062132" required>
+  <button type="submit">Ich komme!</button>
 </form>
+
+<script>
+document.getElementById('registrationForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const data = new FormData(form);
+  const action = "https://docs.google.com/forms/d/e/1FAIpQLSdnaZalc37nRXCf-CsmqclrBUsbgAi7gM4wsuwUKr1f9TuMnQ/formResponse";
+
+  fetch(action, {
+    method: 'POST',
+    body: data,
+    mode: 'no-cors'
+  }).then(() => {
+    window.location.href = 'succesful_registration.html';
+  }).catch(() => {
+    window.location.href = 'succesful_registration.html';
+  });
+});
+</script>
+
 
 
   <p><a href="index.html">Zurück</a></p>
