@@ -9,15 +9,7 @@
 </head>
 
 <body>
-  <div id="nav"></div>
-
-  <script>
-    fetch("navigation_bar.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("nav").innerHTML = data;
-      });
-  </script>
+  <div id="header"></div>
 
   <h1>Willkommen in der Neurospicy Community!</h1> 
   <p>Gemeinsam formen wir eine lebendige Community von Menschen mit besonderen Eigenschaften aka Special Effects, in den Bereichen ADHS/D, Hyperaktivität, Neurodivergenz und dem Autismusspektrum. Dabei sprechen wir Betroffene, Angehörige, indirekt Beteiligte, Interessierte und Experten&innen an.</p>
@@ -45,8 +37,7 @@
     
   <p>Bitte beachte: Es handelt sich um eine Initiative von und für Betroffene und ist ausdrücklich kein ärztlicher oder psychologischer Rat.</p>
   
-  <footer>
-    &copy; 2026 Neurospicy Community
-  </footer>
+  <div id="footer"></div>
+
 </body>
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +9,13 @@
 </head>
 
 <body>
-  <div id="nav"></div>
-
-  <script>
-    fetch("navigation_bar.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("nav").innerHTML = data;
-      });
-  </script>
+  <div id="header"></div>
 
   <h1>Danke für deine Anmeldung!</h1>
   <p>Wir haben deine E-Mail erhalten. Du bist für das Event registriert.</p>
   <p><a href="events.html">Zurück zu den Events</a></p>
 
-  <footer>
-    &copy; 2026 Neurospicy Community
-  </footer>
+  <div id="footer"></div>
+
 </body>
 </html>

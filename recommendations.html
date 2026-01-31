@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,9 @@
 </head>
 
 <body>
-  <div id="nav"></div>
-  <script>
-    fetch("navigation_bar.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("nav").innerHTML = data;
-      });
-  </script>
+  <div id="header"></div>
 
-  
+
   <h1>Empfohlene Bücher & Links</h1>
 
   <h2>Bücher</h2>
@@ -48,8 +42,7 @@
     <a href="https://example.com" target="_blank">Link besuchen</a>
   </div>
 
-  <footer>
-    &copy; 2026 Neurospicy Community
-  </footer>
+  <div id="footer"></div>
+
 </body>
 </html>

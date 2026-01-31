@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,8 @@
 </head>
 
 <body>
-  <div id="nav"></div>
+  <div id="header"></div>
 
-  <script>
-    fetch("navigation_bar.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("nav").innerHTML = data;
-      });
-  </script>
-  
   <h1>So laufen Events typischerweise ab:</h1>
   <p>Insert Beschreibung von dem wie es abläuft.....</p>
   
@@ -58,8 +51,7 @@
     });
   </script>
 
-  <footer>
-    &copy; 2026 Neurospicy Community
-  </footer>
+  <div id="footer"></div>
+
 </body>
 </html>
