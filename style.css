@@ -5,7 +5,7 @@ body {
   margin: 0;
   min-height: 100vh;
   color: #3e2c23;
-  background: #efece9;
+  background: #ebcbac;
 body > * {
   padding-left: 7vw;
   padding-right: 7vw;
@@ -14,7 +14,7 @@ body > * {
 
 
 h1, h2, h3 {
-  color: #e8b34f;
+  color: #422719;
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   font-weight: 700;
   margin-top: 2rem;
@@ -39,8 +39,7 @@ a:hover, a:focus {
 
 .site-header {
   padding: 2.5rem 2vw 1.5rem 2vw;
-
-  background: linear-gradient(to bottom, #e8b34f 0%, #efece9 100%);
+  background: linear-gradient(to bottom, #dba064 0%, #ebcbac 100%);
   border: none;
   border-radius: 0;
   position: sticky;
@@ -124,7 +123,7 @@ footer {
   color: #fff;
   padding: 2.5rem 2vw 2rem 2vw;
   border: none;
-  background: linear-gradient(to top, #e8b34f 0%, #efece9 100%);
+  background: linear-gradient(to top, #dba064 0%, #ebcbac 100%);
   border-radius: 0;
 }
 
