@@ -6,8 +6,11 @@ body {
   min-height: 100vh;
   background: #fdf6f0;
   color: #3e2c23;
+  background: #e6ccb2;
+body > * {
   padding-left: 3vw;
   padding-right: 3vw;
+}
 }
 
 
