@@ -6,14 +6,18 @@
   <title>Impressum</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <nav>
-    <a href="index.html">Über Uns</a>
-    <a href="events.html">Events</a>
-    <a href="recommendations.html">Ressourcen</a>
-    <a href="impressum.html">Impressum</a>
-  </nav>
 
+<body>
+  <div id="nav"></div>
+
+  <script>
+    fetch("navigation_bar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("nav").innerHTML = data;
+      });
+  </script>
+  
   <h1>Impressum</h1>
 
   <p><strong>Verantwortlich für den Inhalt:</strong></p>
