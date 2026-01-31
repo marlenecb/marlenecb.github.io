@@ -24,7 +24,7 @@ h1, h2, h3 {
 
 
 a {
-  color: #e67e22;
+  color: #d48433;
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -32,7 +32,7 @@ a {
 
 a:hover, a:focus {
   color: #e8b34f;
-  text-decoration: underline;
+  text-decoration: none;
   outline: none;
 }
 
